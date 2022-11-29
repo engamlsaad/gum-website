@@ -1,0 +1,303 @@
+/* Start Varaibles */
+:root {
+    --mainColor: #fff;
+    --SectionPadding: 5rem;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* End Global Rules */
+/* Start Header */
+header {
+    background-image: url("../imgs/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+header .navbar {
+    padding: 0.25rem 1rem;
+}
+header .navbar .navbar-brand img {
+    width: 7rem;
+} 
+header .navbar .fa-bars {
+    color: var(--mainColor);
+    font-size: 1.2rem;
+}
+header .navbar .navbar-toggler {
+    border: none;
+    border-radius: 0rem;
+}
+header .navbar .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+header .navbar .navbar-nav {
+    text-align: right;
+}
+header .navbar .navbar-nav .nav-link {
+    color: var(--mainColor);
+    text-transform: uppercase;
+}
+header .banner {
+    background-color: var(--mainColor);
+    box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.7);
+    width: 50rem;
+    height: 12rem;
+    padding: 2rem 3rem 3rem;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -6rem;
+}
+header .banner h1 {
+    font-size: 1.7rem;
+}
+header .banner small {
+    display: block;
+    font-size: 0.75rem;
+}
+header .banner button {
+    background-color: #07377d;
+    color: var(--mainColor);
+    font-size: 0.9rem;
+    padding: 0.5rem 1.25rem;
+    border: 1px solid #07377d;
+    display: inline-block;
+    margin: 1rem 0rem;
+}
+@media(max-width: 767px) {
+    header .banner {
+        width: 20rem;
+        height: 16rem;
+        bottom: -8rem;
+    }
+    header .banner h1 {
+        font-size: 1rem;
+    }
+}
+/* End Header */
+/* Start About Section */
+.about-us {
+    margin-top: 14rem;
+    margin-bottom: 5rem;
+}
+.about-us .imgg img {
+    width: 35rem;
+}
+.about-us .text {
+    margin-top: 2.5rem;
+}
+.about-us .textt {
+    margin-top: 3.5rem;
+}
+.about-us .text h2,
+.about-us .textt h2 {
+    font-size: 1.4rem;
+}
+.about-us .text .paragraph,
+.about-us .textt .paragraph {
+    margin-top: 1rem;
+}
+.about-us .img  {
+    margin-top: 2.5rem;
+}
+.about-us .img img {
+    width: 110rem;
+    cursor: pointer;
+}
+/* End About Section */
+/* Start Services Section */
+.services {
+    padding-top: var(--SectionPadding);
+    padding-bottom: var(--SectionPadding);
+    background-color: #eee;
+}
+.services .box {
+    margin-bottom: 1rem;
+}
+.services .box .text {
+    margin: 0.8rem 0rem
+}
+.services .box .text img {
+    width: 2.5rem;
+}
+.services .box .text h5 {
+    font-size: 1.2rem;
+}
+.services .box p {
+    font-size: 0.95rem;
+}
+/* End Services Section */
+/* Start Features Section */
+.features {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../imgs/feature-background.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-bottom: var(--SectionPadding);
+    padding-top: var(--SectionPadding);
+}
+.features .img img {
+    width: 40rem;
+    margin-bottom: 1.5rem;
+}
+.features .feature {
+    display: flex;
+    color: var(--mainColor);
+}
+.features .feature svg {
+    font-size: 2.25rem;
+    margin-top: 0.8rem;
+}
+.features .feature .feature-text {
+   margin: 0.8rem 3rem;
+}
+.features .feature  .feature-text p {
+    font-size: 0.9rem;
+}
+/* End Features Section */
+/* Start Testimonial Section */
+.testimonials {
+    padding-top: var(--SectionPadding);
+    padding-bottom: var(--SectionPadding);
+}
+.testimonials .main-title {
+    margin: 1.5rem 0rem;
+}
+.testimonials .main-title h3{
+    color: #1a4d75;
+}
+.testimonials .main-title p {
+    font-size: 0.9rem;
+    width: 25rem;
+    margin: auto;
+}
+@media(max-width: 767px) {
+    .testimonials .main-title p {
+        width: 24rem;
+    }
+}
+.testimonials .box {
+    box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+}
+.testimonials .box p {
+    font-size: 0.9rem;
+}
+.testimonials .box img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -1rem;
+}
+.testimonials .boxx {
+    margin-top: 0rem;
+}
+.testimonials .box a {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+    color: #009688;
+}
+.testimonials .box a svg {
+    color: #1a4d75;
+}
+/* End Testimonial Section */
+/* Start Contact Section */
+.contact {
+    padding-top: 2rem;
+    margin-bottom: -5rem;
+    position: relative;
+    z-index: 100;
+}
+.contact .contact-us {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: #263590;
+    box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.3);
+    color: var(--mainColor);
+}
+.contact .contact-us p {
+    font-size: 0.9rem;
+}
+.contact .contact-us .input-group {
+    width: 30rem;
+    margin: auto;
+    background-color: var(--mainColor);
+    border-radius: 30rem;
+}
+@media(max-width: 767px) {
+    .contact .contact-us .input-group {
+        width: 20rem;
+    }
+    .contact .contact-us p {
+        font-size: 0.8rem;
+    }
+}
+.contact .contact-us .input-group .form-control {
+    border-radius: 0rem;
+    border: none;
+    background-color: transparent;
+}
+.contact .contact-us .input-group .form-control::placeholder {
+    font-size: 0.8rem;
+}
+.contact .contact-us .input-group .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+.contact .contact-us .input-group .btn {
+    color: var(--mainColor);
+    font-size: 0.8rem;
+    background-image: linear-gradient(to left, #26359082, #1a4d75);
+    margin: 0.2rem;
+    border: 1px solid transparent;
+}
+/* End Contact Section */
+/* Start Footer */
+footer {
+    background-color: #eee;
+    padding-top: var(--SectionPadding);
+    padding-bottom: 2rem;
+}
+footer .text img {
+    width: 7rem;
+}
+footer .text p {
+    font-size: 0.9rem;
+    margin: 1rem 0rem;
+}
+footer h6 {
+    color: #263590;
+}
+footer ul {
+    margin: 1.25rem 0rem;
+}
+footer ul li {
+    margin-bottom: 0.7rem;
+    font-size: 0.9rem;
+}
+footer svg {
+    color: #263590;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+footer .marg {
+    margin-left: 2.5rem;
+}
+/* End Footer */
